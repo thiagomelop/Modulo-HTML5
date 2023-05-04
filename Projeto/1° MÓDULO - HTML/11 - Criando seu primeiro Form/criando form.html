@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Formulário</title>
+    </head>
+        <body>
+            <h3>Liga dos astronautas</h3>
+            <form>
+                <fieldset>
+                        <legend><strong>Cadastro</strong></legend>
+                    <p>Nome: <input type="text" name="tNome" id="cNome" ></p>
+                    <P>Email: <input type="email" name="tMail" id="cMail" > Senha: <input Password: type="password" name="tPass" id="cPass"></p>
+                    <p>Data de nascimento: <input type="date" name="tData" id="cData" ><label for="MeuDoc"> Selecione um arquivo:</label>
+                    <input type="file" name="MeuDoc" id="MeuDoc"></p>
+                    
+                    <p>Nacionalidade:
+                        <select name="tNac" id="cNac">
+                            <option>Brasileiro(a)</option>
+                            <option>Estrangeiro(a)</option>
+                        </select>
+                        Se Estrangeiro(a), digite o País: <input type="text" name="tPais" id="cPais" >
+        
+                </fieldset></p>
+                <p><fieldset id="sexo">
+                    <legend><strong>Gênero</strong></legend>
+                    <input type="radio" name="sexo" id="cMasc"><label for="cMasc">Masculino</label><br>
+                    <input type="radio" name="sexo" id="cFem"><label for="cFem">Feminino</label><br>
+                </fieldset></p>
+                <fieldset><legend><strong>Qualidades</strong></legend>
+                    <input type="checkbox" name="tqualidades" id="cInteligencia">Inteligência<br>
+                    <input type="checkbox" name="tqualidades" id="cResiliencia">Resiliência<br>
+                    <input type="checkbox" name="tqualidades" id="cPreparoFisico">Preparo fisíco<br>
+                    <input type="checkbox" name="tqualidades" id="cEducacao">Educação
+                </fieldset>
+                    <p><input type="submit" value="ENVIAR"></p>
+            </form>
+        </body>
+</html>

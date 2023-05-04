@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulário</title>
+</head>
+<body>
+    <form method="post" id="fContato" action="mailto:contato@cursoemvideo.com">
+    <fieldset id="usuário">
+        <legend><h3>Identificação</h3></legend>
+        <p><label><strong>Nome </strong></label>
+            <input type="text" name="tNome" id="cNome" placeholder="Nome Completo"></p>
+        <p><label><strong>Senha </strong></label>
+            <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
+        <p><label><strong>E-mail </strong></label>
+            <input type="email" name="tEmail" id="cEmail" placeholder="exemplo@exemplo.com" ></p>
+        <p><label><strong>Data de Nascimento</strong></label><strong>Data de Nascimento</strong>
+            <input type="date"  name="cDataNascimento" id="tDataNascimento" maxlength="8" placeholder="00/00/0000"></p>
+    <fieldset id="sexo">
+        <legend><h3>Sexo</h3></legend>
+            <input type="radio" name="tSexo" id="cMasc"><strong><label for="cMasc">Masculino</strong></label><br>
+            <input type="radio" name="tSexo" id="cFem"><strong><label for="cFem">Feminino</strong></label><br>
+                
+    </fieldset>
+        
+    </fieldset>
+
+    <fieldset id="endereco">
+        <legend><h3>Endereço</h3></legend>
+        <p><label><strong>Logradouro </strong></label>
+            <input type="text" name="tRua" id="cRua" size="20" maxlength="30" placeholder="rua, avenida, travessa, ..."></p>
+        <p><label><strong>Número </strong></label>
+            <input type="number" name="tNum" id="cNum" min="0" max="99999"></p>
+        <p><label><strong>Estado </strong></label>
+            <select name="tEstado" id="cEstado">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP" selected> São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </select></p>
+        <p><label><strong>Cidade</strong></label>
+            <input type="text" name="tCid" id="cCid" maxlength="15"></p>
+    </fieldset>
+
+    <fieldset id="msg">
+        <legend><h3>Mensagem</h3></legend>
+        Nivel de Urgência
+        Mensagem
+    </fieldset>
+
+        [ENVIAR]
+
+
+    </form>
+</body>
+</html>
